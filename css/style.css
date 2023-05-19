@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*NAVBAR*/
+
+nav {
+  height: 70px;
+}
+
+#logo {
+  width: 150px;
+  margin-left: 100px;
+}
+
+@media (max-width: 600px) {
+  #logo {
+    width: 100px;
+  }
+}
+
+.navbar-text {
+  margin-left: 0;
+  font-size: 22px;
+  color: white;
+}
+
+@media (max-width: 1150px) {
+  .navbar-text {
+    display: none;
+  }
+}
+
+.nav-item {
+  font-size: 18px;
+}
+
+
+
+/*IMAGEN PRINCIPAL*/
+
+#img-principal {
+  position: relative;
+  display: inline-block;
+}
+
+.presentacion {
+  width: 40%;
+  position: absolute;
+  bottom: 30%;
+  right: 6rem;
+  background: rgba(0, 0, 0, .6);
+  padding: 20px;
+}
+
+.texto-principal {
+  font-size: 20px;
+  text-align: right;
+}
+
+.boton-principal {
+  margin: 10px;
+  border: 1px solid white;
+}
+
+#boton-comprar:hover {
+  background: none;
+}
+
+@media (max-width: 1200px) {
+  .texto-principal {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .presentacion {
+    display: none;
+  }
+}
+
+
+/*SECCION ORADORES*/
+
+.seccion-oradores {
+  margin: 40px;
+}
+
+.titulo-seccion {
+  text-align: center;
+
+}
+
+.titulo-seccion h5,
+h3 {
+  text-shadow: -1px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+#oradores {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.card {
+  box-shadow: 10px 10px 5px 0px rgba(17, 39, 84, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(17, 39, 84, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(17, 39, 84, 0.75);
+}
+
+
+.nombres-oradores {
+  margin-top: 5px;
+  text-shadow: -1px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+/*SECCION LOCACION*/
+
+#fotos-lugares {
+  width: 50%;
+}
+
+.locacion {
+  box-shadow: 2px 0px 5px 5px rgba(42, 48, 94, 0.67);
+  -webkit-box-shadow: 2px 0px 5px 5px rgba(42, 48, 94, 0.67);
+  -moz-box-shadow: 2px 0px 5px 5px rgba(42, 48, 94, 0.67);
+}
+
+#descripcion {
+  width: 50%;
+  background-image: radial-gradient(circle at 85.36% 111.24%, #4b4d59 0, #484852 12.5%, #414047 25%, #363537 37.5%, #262725 50%, #161a14 62.5%, #031001 75%, #000500 87.5%, #000000 100%);
+}
+
+#texto-descriptivo {
+  margin: 30px;
+  color: white;
+  text-align: justify;
+}
+
+@media (max-width: 950px) {
+  #descripcion {
+    display: none;
+  }
+
+  #fotos-lugares {
+    width: 100%;
+  }
+}
+
+/*FORMULARIO*/
+
+.formulario {
+  margin: 40px;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+}
+
+input[type="text"], input[type="number"], input[type="email"],
+textarea, .form-select {
+  box-shadow: 10px 10px 13px -5px rgba(25, 39, 115, 0.67);
+  -webkit-box-shadow: 10px 10px 13px -5px rgba(25, 39, 115, 0.67);
+  -moz-box-shadow: 10px 10px 13px -5px rgba(25, 39, 115, 0.67);
+}
+
+#exampleFormControlTextarea1 {
+  margin: 30px 0 0 0;
+}
+
+#aclaracion {
+  font-size: 12px;
+  margin-left: 10px;
+  color: rgb(87, 85, 85);
+}
+
+#enviar {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  background: rgb(52, 172, 52);
+  border: none;
+}
+
+#enviar:hover {
+  background: green;
+}
+
+/*FOOTER*/
+
+footer {
+  background-image: radial-gradient(circle at 120.71% 50%, #80a9ff 0, #08428a 50%, #000000 100%);
+}
+
+footer a {
+  display: block;
+  text-align: center;
+  margin: 10px;
+  font-size: 18px;
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+
+
+/*Pagina Tickets*/
+
+section {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px;
+}
+
+.card-body:hover{
+  box-shadow: -9px -8px 11px -5px rgba(0,0,0,0.75) inset;
+  -webkit-box-shadow: -9px -8px 11px -5px rgba(0,0,0,0.75) inset;
+  -moz-box-shadow: -9px -8px 11px -5px rgba(0,0,0,0.75) inset;
+}
+
+
+
+#resultado {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#total {
+  width: 50%;
+  border-radius: 10px;
+  background-color: #9abaff;
+}
+
+#numeroTotal {
+  color: rgb(20, 1, 1);
+  font-size: 1.3em;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+#botones-tickets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+#borrar, #resumen {
+ width: 300px;
+ height: 40px;
+  margin: 20px;
+  background: rgb(52, 172, 52);
+  border: none;
+}
+
+#borrar:hover, #resumen:hover {
+  background: green;
+}
