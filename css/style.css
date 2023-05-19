@@ -215,6 +215,7 @@ section {
 }
 
 .card {
+  cursor: pointer;
   margin: 10px;
 }
 
